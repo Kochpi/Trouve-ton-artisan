@@ -6,6 +6,7 @@ const sequelize = require("./config/database");
 
 const artisanRoutes = require("./routes/artisanRoutes");
 const categoryRoutes = require("./routes/categoryRoutes");
+const contactRoutes = require("./routes/contactRoutes");
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(express.json());
 // Routes
 app.use("/api/artisans", artisanRoutes);
 app.use("/api/categories", categoryRoutes);
+app.use("/api/contact", contactRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

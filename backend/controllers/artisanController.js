@@ -69,9 +69,26 @@ const searchArtisans = async (req, res) => {
   }
 };
 
+// recher par catégorie
+const getArtisansByCategory = async (req, res) => {
+  try {
+    const artisans = await Artisan.findAll({
+      include: {
+        model: Specialite,
+        where: { id_categorie: req.params.id },
+        include: Category,
+      },
+    });
+    res.json(artisans);
+  } catch (error) {
+    res.status(500).json({ message: "Erreur serveur" });
+  }
+};
+
 module.exports = {
   getAllArtisans,
   getArtisanById,
   getTopArtisans,
   searchArtisans,
+  getArtisansByCategory,
 };
