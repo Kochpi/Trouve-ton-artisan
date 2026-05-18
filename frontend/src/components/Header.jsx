@@ -10,8 +10,8 @@ function Header() {
         <div className="container-fluid px-4">
 
           {/* Logo */}
-          <Link className="navbar-brand text-white" to="/">
-            Trouve ton artisan !
+          <Link to="/">
+            <img src="/Logo.png" alt="Logo" className="img-fluid" style={{ maxHeight: "80px" }} />
           </Link>
 
           {/* Burger menu mobile */}
