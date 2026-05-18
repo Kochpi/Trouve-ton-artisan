@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const sequelize = require("./config/database");
+const verifierCle = require("./middleware/auth");
 
 const artisanRoutes = require("./routes/artisanRoutes");
 const categoryRoutes = require("./routes/categoryRoutes");
@@ -13,6 +14,7 @@ const app = express();
 // Middlewares
 app.use(cors());
 app.use(express.json());
+app.use("/api", verifierCle);
 
 // Routes
 app.use("/api/artisans", artisanRoutes);
