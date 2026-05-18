@@ -1,0 +1,47 @@
+@use 'bootstrap/scss/bootstrap';
+
+// palette de couleur
+$bleu-fonce: #00497c;
+$bleu-clair: #0074c7;
+$blanc: #f1f8fc;
+$gris-fonce: #384050;
+$rouge: #cd2c2e;
+
+// style commun
+body {
+    background-color: $blanc;
+    color: $gris-fonce;
+    font-family: 'Graphik', sans-serif;
+}
+
+.header {
+    background-color: $bleu-clair;
+}
+
+.footer {
+    background-color: $bleu-clair;
+    color: $blanc;
+}
+
+// les cartes
+.card-artisan {
+    border: 0.5pc solid $bleu-clair;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.etoiles {
+    color: $rouge;
+}
+
+// bouton 
+.btn-principal {
+    background-color: $bleu-clair;
+    color: $blanc;
+    border: none;
+
+    &:hover {
+        background-color: $bleu-fonce;
+        color: $blanc;
+    }
+}
