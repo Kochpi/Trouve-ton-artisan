@@ -12,7 +12,12 @@ const contactRoutes = require("./routes/contactRoutes");
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    allowedHeaders: ["Content-Type", "x-api-key"],
+  }),
+);
 app.use(express.json());
 app.use("/api", verifierCle);
 
