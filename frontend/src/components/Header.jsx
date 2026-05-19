@@ -6,12 +6,12 @@ function Header() {
     const navigate = useNavigate();
   return (
     <header className="header py-2">
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg" style={{ height: "50px" }}>
         <div className="container-fluid px-4">
 
           {/* Logo */}
-          <Link to="/">
-            <img src="/Logo.png" alt="Logo" className="img-fluid" style={{ maxHeight: "80px" }} />
+          <Link to="/" className='d-flex align-items-center h-100'>
+            <img src="/Logo.png" alt="Logo" className="logo" />
           </Link>
 
           {/* Burger menu mobile */}

@@ -25,28 +25,28 @@ function Home() {
           <div className="row g-3">
 
             <div className="col-12 col-md-6 col-lg-3">
-              <div className="card-artisan p-3 text-center bg-white">
+              <div className="card-artisan p-3 text-center bg-white h-100">
                 <div className="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style={{ width: '40px', height: '40px' }}>1</div>
                 <p style={{ color: '#384050' }}>Choisir la catégorie d'artisanat dans le menu</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-3">
-              <div className="card-artisan p-3 text-center bg-white">
+              <div className="card-artisan p-3 text-center bg-white h-100">
                 <div className="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style={{ width: '40px', height: '40px' }}>2</div>
                 <p style={{ color: '#384050' }}>Choisir un artisan</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-3">
-              <div className="card-artisan p-3 text-center bg-white">
+              <div className="card-artisan p-3 text-center bg-white h-100">
                 <div className="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style={{ width: '40px', height: '40px' }}>3</div>
                 <p style={{ color: '#384050' }}>Le contacter via le formulaire de contact</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-3">
-              <div className="card-artisan p-3 text-center bg-white">
+              <div className="card-artisan p-3 text-center bg-white h-100">
                 <div className="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style={{ width: '40px', height: '40px' }}>4</div>
                 <p style={{ color: '#384050' }}>Une réponse sera apportée sous 48h</p>
               </div>

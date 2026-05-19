@@ -18,6 +18,20 @@ body {
     background-color: $bleu-clair;
 }
 
+.logo {
+    height: 100%;      /* prend toute la hauteur du header */
+    max-height: 110px;  /* optionnel pour limiter */
+    width: auto;       /* garde les proportions */
+  object-fit: contain;
+}
+      
+.header .nav-link {
+    font-size: 18px;
+}
+.header .nav-link:hover {
+    text-decoration:underline;  
+}
+
 .footer {
     background-color: $bleu-clair;
     color: $blanc;
@@ -25,9 +39,10 @@ body {
 
 // les cartes
 .card-artisan {
-    border: 0.5pc solid $bleu-clair;
+    border: 0.5px solid $bleu-clair;
     border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .etoiles {
