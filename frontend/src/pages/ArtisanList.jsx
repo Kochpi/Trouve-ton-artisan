@@ -4,16 +4,11 @@ import { getArtisansByCategory } from '../services/api';
 
 function ArtisanList() {
 
-  // On stocke la liste des artisans
   const [artisans, setArtisans] = useState([]);
-
-  // useParams récupère le "id" dans l'URL ex: /artisans/category/2 → id = 2
   const { id } = useParams();
-
-  // useNavigate permet de changer de page
   const navigate = useNavigate();
 
-  // Au chargement, on appelle l'API pour récupérer les artisans de cette catégorie
+
   useEffect(() => {
     getArtisansByCategory(id)
       .then(response => setArtisans(response.data))

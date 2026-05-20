@@ -2,12 +2,15 @@ import axios from "axios";
 
 const API_URL = "http://localhost:3000/api";
 
+// SECURITE
 const api = axios.create({
   baseURL: API_URL,
   headers: {
     "x-api-key": "RpDidali58!",
   },
 });
+
+// FICHIER QUI LIE LE FRONTEND ET LE BACKEND
 
 // Récupérer tous les artisans
 export const getAllArtisans = () => api.get(`${API_URL}/artisans`);

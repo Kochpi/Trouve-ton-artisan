@@ -1,13 +1,18 @@
+// LA BARRE DE RECHERCHE 
+
+
 import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { searchArtisans } from '../services/api';
 
+// on charge tout ce dont ona besoin
 function Search() {
   const [artisans, setArtisans] = useState([]);
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const nom = searchParams.get('nom');
 
+  // on renvoie ca 
   useEffect(() => {
     searchArtisans(nom)
       .then(response => setArtisans(response.data))

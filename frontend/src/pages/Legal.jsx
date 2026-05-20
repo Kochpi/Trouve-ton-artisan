@@ -1,3 +1,5 @@
+// LA PAGE A COMPLETER PAR LE CLIENT DANS LES MENTIONS LEGALES ETC
+
 function Legal() {
     document.title = 'Trouve ton artisan - Informations légales';
   return (

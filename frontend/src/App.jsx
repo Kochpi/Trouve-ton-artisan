@@ -1,3 +1,5 @@
+// import des pages et création des routes /
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';

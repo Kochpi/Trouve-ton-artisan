@@ -7,12 +7,14 @@ function ArtisanDetail() {
   const [artisan, setArtisan] = useState(null);
   const { id } = useParams();
 
+  // fonction qui toruve l'artisan
   useEffect(() => {
     getArtisanById(id)
       .then(response => setArtisan(response.data))
       .catch(err => console.error('Erreur :', err));
   }, [id]);
 
+  // si artisan trouvé on envoie la page :
   if (!artisan) return <p className="text-center py-5">Chargement...</p>;
   document.title = `Trouve ton artisan - ${artisan.nom}`;
   return (
@@ -20,7 +22,7 @@ function ArtisanDetail() {
       <div className="container py-5">
         <div className="row">
 
-          {/* Colonne gauche */}
+          {/* IMAGE + DETAILS ARTISAN */}
           <div className="col-12 col-md-4 mb-4">
             <img
               src="https://placehold.co/400x300"
@@ -33,11 +35,12 @@ function ArtisanDetail() {
             <p style={{ color: '#0074c7' }}>📍 {artisan.ville}</p>
           </div>
 
-          {/* Colonne droite */}
+          {/* A PROPOS */}
           <div className="col-12 col-md-8">
             <h2 style={{ color: '#00497c' }}>À propos</h2>
             <p style={{ color: '#384050' }}>{artisan.a_propos}</p>
 
+            {/* FORMULAIRE */}
             <h2 style={{ color: '#00497c' }}>Contactez-moi</h2>
             <form>
               <div className="mb-3">

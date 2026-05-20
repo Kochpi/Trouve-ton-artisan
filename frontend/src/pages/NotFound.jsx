@@ -1,3 +1,5 @@
+// LA PAGE NOT FOUND ERROR 
+
 import { useNavigate } from 'react-router-dom';
 
 function NotFound() {
