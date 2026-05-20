@@ -1,6 +1,7 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/database");
 
+// la table sql specialité en sequelize
 const Specialite = sequelize.define(
   "Specialite",
   {

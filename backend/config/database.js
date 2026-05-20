@@ -1,6 +1,7 @@
 const { Sequelize } = require("sequelize");
 require("dotenv").config();
 
+// ON APPELLE LA BDD
 const sequelize = new Sequelize(
   process.env.DB_NAME,
   process.env.DB_USER,
@@ -12,6 +13,7 @@ const sequelize = new Sequelize(
   },
 );
 
+// ON SE CONNECTE
 sequelize
   .authenticate()
   .then(() => console.log("Connexion à la BDD réussie"))

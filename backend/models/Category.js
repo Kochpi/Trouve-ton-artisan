@@ -1,6 +1,7 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/database");
 
+// la table category en sql mais en sequelize
 const Category = sequelize.define(
   "Category",
   {
@@ -15,8 +16,8 @@ const Category = sequelize.define(
     },
   },
   {
-    tableName: "categories", // Le nom exact de la table en BDD
-    timestamps: false, // On ne veut pas de colonnes createdAt/updatedAt
+    tableName: "categories",
+    timestamps: false,
   },
 );
 

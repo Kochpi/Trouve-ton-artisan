@@ -2,6 +2,7 @@ const Category = require("./Category");
 const Specialite = require("./Specialite");
 const Artisan = require("./Artisan");
 
+// les relations entre les tables sequelize
 // Une catégorie a plusieurs spécialités
 Category.hasMany(Specialite, { foreignKey: "id_categorie" });
 Specialite.belongsTo(Category, { foreignKey: "id_categorie" });

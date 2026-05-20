@@ -56,6 +56,7 @@ const searchArtisans = async (req, res) => {
     const nom = req.query.nom;
     const artisans = await Artisan.findAll({
       where: {
+        // cherle le mot n'importe ou dans le nom
         nom: { [Op.like]: `%${nom}%` },
       },
       include: {

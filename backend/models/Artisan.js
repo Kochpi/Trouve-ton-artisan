@@ -1,3 +1,6 @@
+// de ce que j'ai compris sequelize est un "traducteur sql-JS, pour l'utiliser il faut "réécrire
+// les tables sql en "modèles" réutilisable ensuite
+
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/database");
 

@@ -8,6 +8,7 @@ const {
   getArtisansByCategory,
 } = require("../controllers/artisanController");
 
+// les routes de l'api
 router.get("/", getAllArtisans); // GET /api/artisans
 router.get("/top", getTopArtisans); // GET /api/artisans/top
 router.get("/search", searchArtisans); // GET /api/artisans/search?nom=...
