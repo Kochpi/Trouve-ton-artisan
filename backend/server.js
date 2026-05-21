@@ -14,7 +14,7 @@ const app = express();
 // Middlewares
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://ton-url-frontend.up.railway.app",
     allowedHeaders: ["Content-Type", "x-api-key"],
   }),
 );
