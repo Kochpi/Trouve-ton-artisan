@@ -14,7 +14,7 @@ const app = express();
 // Middlewares
 app.use(
   cors({
-    origin: "https://ton-url-frontend.up.railway.app",
+    origin: "https://alluring-nourishment-production-2499.up.railway.app",
     allowedHeaders: ["Content-Type", "x-api-key"],
   }),
 );
