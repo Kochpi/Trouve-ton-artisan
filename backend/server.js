@@ -12,6 +12,7 @@ const contactRoutes = require("./routes/contactRoutes");
 const app = express();
 
 // Middlewares
+// pour railway
 app.use(
   cors({
     origin: "https://alluring-nourishment-production-2499.up.railway.app",
